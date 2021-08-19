@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"; ??needed
+import "./App.css";
+
+import Footer from "./components/Footer";
+
+/* ?? NEEDED?? 
+const client = new ApolloClient({
+  uri: "/graphql",
+  cache: new InMemoryCache(), //apollo client comes with its own native inmemorycache library
+});
+*/
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      {" "}
+      //IS THIS NEEDED???
+      <div className="App">
+        <Header />
+        <div className="container">
+          <AboutMe />
+        </div>
+        <div className="container">
+          <PreviousWork />
+        </div>
+        <div className="container">
+          <WorkCards />
+        </div>
+        <Footer />
+      </div>
+    </ApolloProvider>
   );
 }
 
