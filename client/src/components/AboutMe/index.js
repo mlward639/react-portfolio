@@ -22,4 +22,4 @@ const AboutMe = () => {
   );
 };
 
-export default Footer;
+export default AboutMe;
