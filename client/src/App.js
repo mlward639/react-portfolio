@@ -2,6 +2,7 @@ import React from "react";
 // import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"; ??needed
 import "./App.css";
 
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 /* ?? NEEDED?? 
