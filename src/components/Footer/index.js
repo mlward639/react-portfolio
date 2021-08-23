@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="col col-2 left-titles">
         <h2>Contact Me</h2>
       </div>
-      <div className="col-10 col">
+      <div className="col-10 col linkContainer">
         <ul
           className="navbar-nav navbar navbar-expand-lg contact-links"
           id="navbarNav"
@@ -23,6 +23,7 @@ const Footer = () => {
             <a
               className="nav-link link-color-issue"
               href="https://github.com/mlward639"
+              target="_blank"
             >
               <i className="fab fa-github-square"></i>GitHub Repo{" "}
             </a>
@@ -31,6 +32,7 @@ const Footer = () => {
             <a
               className="nav-link link-color-issue"
               href="https://linkedin.com/in/maggie-ward9"
+              target="_blank"
             >
               <i className="fab fa-linkedin"></i>LinkedIn
             </a>

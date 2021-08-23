@@ -18,6 +18,19 @@ a {
   color: inherit;
 }
 
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(255, 217, 0);
+  background-color: var(--darkGray);
+}
+
 /* header */
 .navbar-container {
   display: flex;
@@ -31,6 +44,7 @@ a {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
+  margin-left: 20px;
 }
 
 .navbar-brand {
@@ -43,6 +57,7 @@ a {
 .nav-links {
   width: 100%;
   font-size: 20px;
+  color: white;
 }
 
 .navbar-ul {
@@ -152,50 +167,48 @@ a {
 
 .main-work-description {
   background-color: var(--mediumGray);
-  width: 35%;
+  width: 45%;
   z-index: 10;
   position: absolute;
-  bottom: 10%;
+  bottom: 7%;
   line-height: 1;
-  margin-left: 1.9%;
+  margin-left: 10.9%;
 }
 
 .main-work-description h2 {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .main-work-description p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .github-project-link {
   margin-left: 10px;
 }
 
-.my-other-work {
-  margin-left: 0;
-}
-
 .work-pic {
   border: 9px var(--mediumGray) solid;
   width: 120%;
-  height: 120%;
+  height: 100%;
   margin-top: 3%;
   margin-left: 0%;
 }
 
-.main-work-container {
-  border: 2px solid orange;
-}
+/* .main-work-container {
+ border: 2px solid green; 
+} */
 
 .other-work {
-  border: 2px solid red;
-  width: 120%;
+  /* border: 2px solid red; */
+  width: 100%;
+  margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .minorWorkContainer {
-  border: 2px solid yellow;
-  padding-left: 300px;
+  /* border: 2px solid yellow; */
+  padding-left: 240px;
   padding-right: 0;
 }
 
@@ -205,26 +218,23 @@ a {
   flex-wrap: wrap;
 }
 
-/* .other-work {
-  width: 150%;
-} */
-
 .other-work-description {
   background-color: var(--mediumGray);
-  width: 35%;
+  width: 55%;
   z-index: 10;
   position: absolute;
-  bottom: 15%;
-  padding-bottom: 0;
+  bottom: 3%;
+  padding-top: 5px;
 }
 
 .other-work-description h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
 }
 
 .other-work-description p {
-  line-height: 1;
+  line-height: 1.1;
+  font-size: 14px;
 }
 
 /* contact me row */
@@ -234,8 +244,8 @@ a {
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  align-items: center;
   background-color: var(--mediumGray);
+  display: flex;
 }
 
 .left-titles h2 {
@@ -246,12 +256,19 @@ a {
   text-align: right;
 }
 
+.linkContainer {
+  border: 2px solid purple;
+}
+
 .contact-links {
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-item {
-  font-size: 20px;
+  font-size: 16px;
+
+  /* color: red; */
 }
 
 /* light mode */

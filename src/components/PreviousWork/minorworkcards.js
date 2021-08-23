@@ -17,16 +17,6 @@ const minorWorkCards = [
   },
   {
     id: 2,
-    key: "Weather",
-    WorkDeployedURL: "https://mlward639.github.io/unit-six-homework/",
-    WorkImgSrc: WeatherImg,
-    WorkImgAlt: "weather-screenshot",
-    WorkTitle: "Weather Dashboard",
-    WorkTech: "HTML, CSS, JS",
-    WorkGithubRepo: "https://github.com/mlward639/unit-six-homework",
-  },
-  {
-    id: 3,
     key: "Blog",
     WorkDeployedURL: "https://peaceful-thicket-32012.herokuapp.com/",
     WorkImgSrc: BlogImg,
@@ -34,6 +24,16 @@ const minorWorkCards = [
     WorkTitle: "Developer's Blog",
     WorkTech: "MySQL2, Express, Sequelize, Handlebars, Heroku",
     WorkGithubRepo: "https://github.com/mlward639/Unit-fourteen-homework",
+  },
+  {
+    id: 3,
+    key: "Weather",
+    WorkDeployedURL: "https://mlward639.github.io/unit-six-homework/",
+    WorkImgSrc: WeatherImg,
+    WorkImgAlt: "weather-screenshot",
+    WorkTitle: "Weather Dashboard",
+    WorkTech: "HTML, CSS, JS",
+    WorkGithubRepo: "https://github.com/mlward639/unit-six-homework",
   },
   {
     id: 4,
@@ -50,14 +50,18 @@ const minorWorkCards = [
 const MinorWork = () => {
   return minorWorkCards.map((card) => (
     <div className="col-5 col other-work" key={card.key}>
-      <a href={card.WorkDeployedURL}>
+      <a href={card.WorkDeployedURL} target="_blank">
         <img src={card.WorkImgSrc} alt={card.WorkImgAlt} className="work-pic" />
       </a>
       <div className="other-work-description">
         <h3>{card.WorkTitle}</h3>
         <p>
           {card.WorkTech}
-          <a className="github-project-link" href={card.WorkGithubRepo}>
+          <a
+            className="github-project-link"
+            href={card.WorkGithubRepo}
+            target="_blank"
+          >
             <i className="fab fa-github-square"></i>
           </a>
         </p>

@@ -9,12 +9,11 @@ const MainWork = () => {
           <h2>My Work</h2>
         </div>
         <div className="col-10 col main-work-img-descr">
-          <a href={"https://polar-river-76787.herokuapp.com/"}>
+          <a href={"https://polar-river-76787.herokuapp.com/"} target="_blank">
             <img
               alt="main work placeholder"
               className="main-work-pic"
               src={MainWorkPic}
-              alt="main work placeholder"
             />
           </a>
           <div className="main-work-description">
@@ -24,6 +23,7 @@ const MainWork = () => {
               <a
                 className="github-project-link"
                 href={"https://github.com/mlward639/Get_Money_Smart"}
+                target="_blank"
               >
                 <i className="fab fa-github-square"></i>
               </a>

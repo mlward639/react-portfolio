@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../images/placeholder-logo.png";
+import Resume from "../../images/MWard_Resume2021.pdf";
 
 const Header = () => {
   return (
@@ -30,7 +31,7 @@ const Header = () => {
             </a>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="assets/MWard_Resume2021.pdf">
+            <a className="nav-link" href={Resume} target="_blank">
               Resume
             </a>
           </li>
